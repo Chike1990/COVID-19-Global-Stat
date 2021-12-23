@@ -1,4 +1,7 @@
-import covidCasesActionTypes from "./covid-cases-types";
+/* eslint-disable arrow-body-style */
+/* eslint-disable  object-shorthand */
+
+import covidCasesActionTypes from './covid-cases-types';
 
 export const setCovidCases = (payload) => ({
   type: covidCasesActionTypes.SET_COVID_CASES,

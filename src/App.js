@@ -1,7 +1,8 @@
-import Home from "./pages/Home";
-import CountryCase from "./pages/CountryCase";
-import { Switch, Route } from "react-router-dom";
-import "./App.css";
+/* eslint-disable  react/self-closing-comp */
+import { Switch, Route } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import CountryCase from './pages/CountryCase';
 
 function App() {
   return (

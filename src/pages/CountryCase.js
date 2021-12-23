@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
-import leftArrow from "../assets/left-arrow.svg";
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { Link, useParams } from 'react-router-dom';
+import leftArrow from '../assets/left-arrow.svg';
 
-import "./CountryCase.css";
+import './CountryCase.css';
 
 const CountryCase = () => {
   const allCountriesCovidCases = useSelector(
-    (state) => state.covidCases.allCountriesCovidCases
+    (state) => state.covidCases.allCountriesCovidCases,
   );
   const { id } = useParams();
   const [country, setCountry] = useState({});
 
   useEffect(() => {
     const countryCase = allCountriesCovidCases?.find(
-      (country) => country?.id === id
+      (country) => country?.id === id,
     );
     setCountry(countryCase);
     console.log(countryCase);
@@ -24,11 +24,12 @@ const CountryCase = () => {
       <div className="Home__card-head">
         <div className="Home__card-head-left" id="left-arrow-wrapper">
           <Link to="/">
-            <img src={leftArrow} className="left-icon" />
+            <img src={leftArrow} className="left-icon" alt="arrow" />
           </Link>
         </div>
         <div className="Home__card-head-right">
-          {country?.name} <br />
+          {country?.name}
+          <br />
           STATISTICS
         </div>
       </div>

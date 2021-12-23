@@ -1,9 +1,9 @@
-import covidCasesActionTypes from "./covid-cases-types";
+import covidCasesActionTypes from './covid-cases-types';
 
 const INITIAL_STATE = {
   allCountriesCovidCases: [],
   totalStatistics: {},
-  filterByDate: "2020-03-22",
+  filterByDate: '2020-03-22',
 };
 
 const covidCasesReducer = (state = INITIAL_STATE, action) => {
