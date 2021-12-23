@@ -1,0 +1,30 @@
+.Highlight > div {
+  padding: 20px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-icon {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
+
+#left-arrow-wrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.Highlight > div:nth-child(even) {
+  background: rgba(233, 30, 98, 0.5);
+}
+
+.Highlight > div:nth-child(odd) {
+  background: rgb(233, 30, 98);
+}

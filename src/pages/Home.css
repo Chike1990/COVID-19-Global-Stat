@@ -1,0 +1,108 @@
+.Home {
+  width: 100%;
+}
+
+.Home__header {
+  padding: 5px;
+  background-color: rgba(233, 30, 98, 0.794);
+}
+
+.Home p {
+  position: relative;
+  z-index: 300;
+  color: #ebe3e3;
+  text-transform: uppercase;
+}
+
+.Home__stat {
+  background-color: rgba(233, 30, 98, 0.794);
+  color: #ebe3e3;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.Home__card-head {
+  height: 120px;
+  display: flex;
+  width: 100%;
+  background: rgba(233, 30, 98, 0.5);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Home__card-head-left {
+  background-image: linear-gradient(
+      rgba(233, 30, 98, 0.5),
+      rgba(233, 30, 98, 0.5)
+    ),
+    url("../assets/italy-map.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Home__card-head-right {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Home__card-sub {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  padding-right: 10px;
+  height: 150px;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer !important;
+  position: relative;
+  z-index: 999;
+}
+
+.Home__card-sub:nth-child(odd) {
+  background-image: linear-gradient(
+      rgba(233, 30, 98, 0.5),
+      rgba(233, 30, 98, 0.5)
+    ),
+    url("../assets/brazil-map.png");
+}
+
+.Home__card-sub:nth-child(even) {
+  background-image: linear-gradient(
+      rgba(233, 30, 98, 0.678),
+      rgba(233, 30, 98, 0.5)
+    ),
+    url("../assets/brazil-map.png");
+}
+
+.spinner-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.spinner {
+  align-self: center !important;
+  justify-self: center !important;
+  margin-left: 46% !important;
+}
+
+.wrapper {
+  max-height: 300px;
+  overflow-y: scroll;
+}
