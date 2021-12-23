@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable wrap-iife */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable no-restricted-syntax */
@@ -10,7 +9,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
-  Card, DatePicker, Select, Spin, notification,
+  DatePicker, Spin, notification,
 } from 'antd';
 import moment from 'moment';
 import {
@@ -31,7 +30,7 @@ const Home = () => {
   );
   const date = useSelector((state) => state.covidCases.filterByDate);
   const [loading, setLoading] = useState(false);
-  const { Option } = Select;
+  // const { Option } = Select;
   const dateFormat = 'YYYY-MM-DD';
 
   useEffect(() => {
