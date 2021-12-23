@@ -1,0 +1,133 @@
+.App {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(233, 30, 98, 0.486); */
+}
+
+.mr1 {
+  margin-right: 1rem;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.link-primary {
+  color: #46769e;
+  font-size: 1.6rem;
+}
+
+.width100 {
+  width: 100%;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.app-btn-primary {
+  background-color: #46769e;
+  color: #fff;
+}
+
+.app-btn-ghost {
+  background-color: #fff;
+  color: #46769e;
+  border: 1px solid #46769e;
+}
+
+.app-btn-danger {
+  background-color: #fff;
+  color: #9e2f2f;
+  border: 1px solid #9e2f2f;
+}
+
+.badge {
+  color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+.badge--primary {
+  background-color: #68c9ca;
+}
+
+.badge--secondary {
+  background-color: #808080;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #5b677734;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5b6777;
+  border-radius: 100px;
+}
