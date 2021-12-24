@@ -1,10 +1,3 @@
-/* eslint-disable wrap-iife */
-/* eslint-disable prefer-destructuring */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable  guard-for-in */
-/* eslint-disable  no-param-reassign */
-/* eslint-disable react/jsx-key */
-/* eslint-disable no-restricted-syntax */
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -30,37 +23,33 @@ const Home = () => {
   );
   const date = useSelector((state) => state.covidCases.filterByDate);
   const [loading, setLoading] = useState(false);
-  // const { Option } = Select;
   const dateFormat = 'YYYY-MM-DD';
+  const loadData = async () => {
+    try {
+      setLoading(true);
+      const res = await fetchCovidCases(date);
+      const allCountryCovidCases = [];
+      const { countries } = res.data.dates[date];
+      const totalStatistics = res.data.total;
+      Object.keys(countries).forEach((key) => allCountryCovidCases.push(countries[key]));
+      dispatch(setCovidCases(allCountryCovidCases));
+      dispatch(setTotalStatistics(totalStatistics));
+    } catch (ex) {
+      notification.error({
+        message: 'An error occured',
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    (async function () {
-      try {
-        setLoading(true);
-        const res = await fetchCovidCases(date);
-        const allCountryCovidCases = [];
-        const countries = res.data.dates[date].countries;
-        const totalStatistics = res.data.total;
-        console.log(totalStatistics);
-        for (const country in res.data.dates[date].countries) {
-          allCountryCovidCases.push(countries[country]);
-        }
-        dispatch(setCovidCases(allCountryCovidCases));
-        dispatch(setTotalStatistics(totalStatistics));
-      } catch (ex) {
-        notification.error({
-          message: 'An error occured',
-        });
-      } finally {
-        setLoading(false);
-      }
-    })();
+    loadData();
   }, [date]);
 
   const handleSelectDate = (date) => {
-    date = moment(date).format(dateFormat);
-    console.log(date);
-    dispatch(setFilterDate(date));
+    const newDate = moment(date).format(dateFormat);
+    dispatch(setFilterDate(newDate));
   };
 
   return (
@@ -106,6 +95,7 @@ const Home = () => {
           allCountriesCovidCases?.length
             && allCountriesCovidCases?.map((covidCases) => (
               <Link
+                key={covidCases.id}
                 className="flex-row flex-end align-center Home__card-sub"
                 to={`country/${covidCases?.date}/${covidCases?.id}`}
               >

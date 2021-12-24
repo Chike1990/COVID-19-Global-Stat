@@ -17,7 +17,6 @@ const CountryCase = () => {
       (country) => country?.id === id,
     );
     setCountry(countryCase);
-    console.log(countryCase);
   }, []);
   return (
     <div>
