@@ -1,13 +1,15 @@
 ## Covid-19 Global Statistics
 This is a web application that displays Global Covid-19 data (such as the total deaths from Covid-19, new recorded cases, and total recovered). This app uses Covid-19 data fetched from Narativa API. The application allows users to both  view the global and country specific data about the coronavirus. Users can filter data by date and by country. See the applications screenshots.
 
-Main Page
 ![Screenshot](/src/assets/Screenshot_home_page.png)
-Second Page
+
 ![Screenshot](/src/assets/Screenshot_other_pages.png)
 
 ## Live Video of the Application
-![Live link](https://www.loom.com/share/ab7f8ddb3603480b9d26f4fe96889967)
+![Video link](https://www.loom.com/share/ab7f8ddb3603480b9d26f4fe96889967)
+
+## Live Link
+![Live link](https://covid-19-statistics-by-country.netlify.app/)
 
 ## Built With
 
