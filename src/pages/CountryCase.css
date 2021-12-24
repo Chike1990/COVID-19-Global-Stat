@@ -22,9 +22,9 @@
 }
 
 .Highlight > div:nth-child(even) {
-  background: rgba(233, 30, 98, 0.5);
+  background: rgba(238, 59, 119, 0.5);
 }
 
 .Highlight > div:nth-child(odd) {
-  background: rgb(233, 30, 98);
+  background: rgb(235, 83, 134);
 }

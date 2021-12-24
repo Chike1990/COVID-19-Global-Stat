@@ -79,14 +79,14 @@ const Home = () => {
           GLOBAL STAT
         </div>
         <div className="Home__card-head-right">
-          Cases
+          New Cases
           <br />
           {totalStatistics?.today_open_cases}
         </div>
       </div>
       <div className="Home__card-head">
         <div className="Home__card-head-left">
-          Deaths
+          Total Deaths
           <br />
           {totalStatistics?.today_deaths}
         </div>
@@ -96,7 +96,7 @@ const Home = () => {
           {totalStatistics?.today_recovered}
         </div>
       </div>
-      <div className="Home__stat">COVID STAT BY REGION</div>
+      <div className="Home__stat">COVID STAT BY COUNTRY</div>
       <div className="flex-row flex-wrap wrapper">
         {loading ? (
           <div className="spinner-container">
