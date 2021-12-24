@@ -6,6 +6,9 @@ Main Page
 Second Page
 ![Screenshot](/src/assets/Screenshot_other_pages.png)
 
+## Live Video of the Application
+![Live link](https://www.loom.com/share/ab7f8ddb3603480b9d26f4fe96889967)
+
 ## Built With
 
 - HTML, CSS, JavaScript, React, and Redux;
