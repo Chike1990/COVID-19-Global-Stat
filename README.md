@@ -6,10 +6,10 @@ This is a web application that displays Global Covid-19 data (such as the total 
 ![Screenshot](/src/assets/Screenshot_other_pages.png)
 
 ## Live Video of the Application
-![Video link](https://www.loom.com/share/ab7f8ddb3603480b9d26f4fe96889967)
+![Video link] https://www.loom.com/share/ab7f8ddb3603480b9d26f4fe96889967
 
 ## Live Link
-![Live link](https://covid-19-statistics-by-country.netlify.app/)
+![Live link] https://covid-19-statistics-by-country.netlify.app/
 
 ## Built With
 
@@ -49,12 +49,11 @@ $ cd dist
 - Twitter: [@ChibuikeUzoechi](https://twitter.com/ChibuikeUzoechi)
 - LinkedIn: [@Chibuike-Uzoechina](https://www.linkedin.com/in/chibuike-uzoechina-630857102)
 
-
+## Acknowledgement
+Original design idea by Nelson Sakwa on Behance.
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/Chike1990/Space-Travelers-Hub).
 
 ## Show your support
 
