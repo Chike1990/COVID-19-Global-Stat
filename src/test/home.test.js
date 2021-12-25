@@ -9,11 +9,14 @@ import Home from '../pages/Home';
 
 describe('matches snapshot', () => {
   test('matches to snapshot', () => {
-    const tree = renderer.create(<Router>
-      <Provider store={store}>
-        <Home />
-      </Provider>
-    </Router>).toJSON();
+    const tree = renderer.create(
+      <Router>
+        <Provider store={store}>
+          <Home />
+        </Provider>
+      </Router>,
+    )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
